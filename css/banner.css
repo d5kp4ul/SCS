@@ -1,0 +1,12 @@
+body {
+  text-align: left; /* para IE6 */
+}
+#banner {
+  width: 300px; /* el ancho del banner */
+  float: left;  /* mandarlo a la derecha */
+}
+#content {
+  width: 900px; /* el ancho del contenido */
+  margin: 0px auto; /* centrar el contenido en la página */
+  text-align: left; /* para IE6 */
+}

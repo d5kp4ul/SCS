@@ -1,0 +1,62 @@
+
+		body{
+			padding: 0;
+			margin:  0;
+			height: 100;
+
+			}
+			.menu ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+			}
+			.menu ul li{
+				padding: 15px;
+				position: relative;
+				width: 300px; /*tamaño en general*/
+				vertical-align: middle;
+				background-color:#0B5345; /* Color de todo el contexto  */
+				cursor: pointer;
+				border-right: 5px solid #C0392B; /* Color borde de extension*/
+				border-top: 1px solid #F7DC6F; /* Color borde del menu */
+				-webkit-top: all 0.3s;
+				-o-transition: all 0.3s;
+				transition: all 0.3s;
+			}
+			.menu > ul > li{
+				border-right: 5px solid #34495E; /*borde horia de extesion */
+			}
+			.menu ul li:hover{
+				background-color: #34495E; /* Color de transaparencia*/
+			}
+			.menu ul ul{
+				transition: all 0.3s;
+				opacity: 0;
+				position: absolute;
+				border-left: 5px solid #7FB3D5; /* Seleccion item */
+				visibility: hidden;
+				left: 100%;
+				top: -2%;
+
+			}
+			.menu ul li:hover > ul{
+				opacity: 3;
+				visibility: visible;
+
+			}
+			.menu ul li a{
+				color: #fff;
+				text-decoration: none;
+			}
+			span{
+				margin-right: 15px;
+			}
+			.menu > ul >li:nth-of-type(2)::after{
+				content: "+";
+				position: absolute;
+				margin-left: 60%;
+				color: #fff;
+				font-size: 20px;
+
+			}
